@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -15,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Stats preview card component</title>
     <style>
       .attribution {
@@ -52,16 +52,13 @@
         </div>
       </div>
       <div class="image">
-        <img
-          class="img-desk"
-          src="images/image-header-desktop.jpg"
-          alt="image-desktop"
-        />
-        <img
-          class="img-mob"
-          src="images/image-header-mobile.jpg"
-          alt="image-mobile"
-        />
+        <picture>
+          <source
+            media="(min-width: 769px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <img src="./images/image-header-mobile.jpg" alt="works people" />
+        </picture>
       </div>
     </section>
 
