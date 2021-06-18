@@ -1,3 +1,6 @@
+:root {
+  --font-size: 15px;
+}
 * {
   box-sizing: border-box;
 }
@@ -8,8 +11,8 @@ body {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  height: 100vh;
-  font-size: 15px;
+  min-height: 100vh;
+  font-size: var(--font-size, 15px);
   font-family: "Inter", sans-serif;
 }
 .preview {
